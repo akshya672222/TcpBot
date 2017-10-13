@@ -57,17 +57,9 @@
 		BAF3222A1F9174F000166E85 /* TCP */ = {
 			isa = PBXGroup;
 			children = (
-				BAF322321F9175B800166E85 /* Client */,
 				BAF3222B1F9174F000166E85 /* main.cpp */,
 			);
 			path = TCP;
-			sourceTree = "<group>";
-		};
-		BAF322321F9175B800166E85 /* Client */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Client;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
