@@ -8,13 +8,14 @@
 
 #include <iostream>
 #include <stdio.h>
-#include <string.h>
-#include <sys/socket.h>
-#include <arpa/inet.h>
-#include <unistd.h>
+#include "Server/Server.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
+    
+    Server serverObj;
+    serverObj.handleSocketWork();
+    std::cout << "Hello, World! : %d\n"<<serverObj.getProtNumberForSocket();
     return 0;
 }

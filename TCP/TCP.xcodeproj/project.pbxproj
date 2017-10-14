@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BAF3222C1F9174F000166E85 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAF3222B1F9174F000166E85 /* main.cpp */; };
+		BAF322391F9187B900166E85 /* Server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAF322381F9187B900166E85 /* Server.cpp */; };
+		BAF3223D1F919AFD00166E85 /* Client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAF3223B1F919AFD00166E85 /* Client.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		BAF322281F9174F000166E85 /* TCP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TCP; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF3222B1F9174F000166E85 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BAF322371F9183F500166E85 /* Server.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		BAF322381F9187B900166E85 /* Server.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Server.cpp; sourceTree = "<group>"; };
+		BAF3223B1F919AFD00166E85 /* Client.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Client.cpp; sourceTree = "<group>"; };
+		BAF3223C1F919AFD00166E85 /* Client.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Client.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,29 @@
 		BAF3222A1F9174F000166E85 /* TCP */ = {
 			isa = PBXGroup;
 			children = (
+				BAF3223A1F919AEE00166E85 /* Client */,
+				BAF322331F9178A500166E85 /* Server */,
 				BAF3222B1F9174F000166E85 /* main.cpp */,
 			);
 			path = TCP;
+			sourceTree = "<group>";
+		};
+		BAF322331F9178A500166E85 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				BAF322371F9183F500166E85 /* Server.h */,
+				BAF322381F9187B900166E85 /* Server.cpp */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		BAF3223A1F919AEE00166E85 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				BAF3223B1F919AFD00166E85 /* Client.cpp */,
+				BAF3223C1F919AFD00166E85 /* Client.hpp */,
+			);
+			path = Client;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF322391F9187B900166E85 /* Server.cpp in Sources */,
 				BAF3222C1F9174F000166E85 /* main.cpp in Sources */,
+				BAF3223D1F919AFD00166E85 /* Client.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
